@@ -72,18 +72,63 @@ g.add_edge("5: Palestina", "0: Manizales")
 
 g.add_edge("6: Neira", "0: Manizales")
 
+g.add_edge("7: La Virginia", "1: Pereira")
+g.add_edge("7: La Virginia", "10: Cartago")
+
+ 
+g.add_edge("8: Dosquebradas", "0: Manizales")
+g.add_edge("8: Dosquebradas", "1: Pereira")
+g.add_edge("8: Dosquebradas", "2: Armenia")
+g.add_edge("8: Dosquebradas", "10 :Cartago")
+
+ 
+g.add_edge("9: Santa Rosa de Cabal", "0: Manizales")
+g.add_edge("9: Santa Rosa de Cabal", "1: Pereira")
+g.add_edge("9: Santa Rosa de Cabal", "2: Armenia")
+
+
+g.add_edge("10: Cartago", "0: Manizales")
+g.add_edge("10: Cartago", "1: Pereira")
+g.add_edge("10: Cartago", "2: Armenia")
+g.add_edge("10: Cartago", "7: La Virginia")
+g.add_edge("10: Cartago", "8: Dos quebradas")
+
+g.add_edge("11: Calarca", "2: Armenia")
+
+g.add_edge("12: Ciscasia", "2: Armenia")
+
+g.add_edge("13: La Tebaida", "2: Armenia")
+
+g.add_edge("14: Montenegro", "2: Armenia")
+
 print("Grafo completo:", g.display_graph())
-print("Conexiones de Manizales", g.get_connections("0: Manizales"))
 
+print("Conexiones de Manizales: ", g.get_connections("0: Manizales"))
 
-print("Conexiones de Pereira", g.get_connections("1: Pereira"))
+print("Conexiones de Pereira: ", g.get_connections("1: Pereira"))
 
-print("Conexiones de Armenia", g.get_connections("2: Armenia"))
+print("Conexiones de Armenia: ", g.get_connections("2: Armenia"))
 
-print("Conexiones de Chinchina", g.get_connections("3: Chinchina"))
+print("Conexiones de Chinchina: ", g.get_connections("3: Chinchina"))
 
-print("Conexiones de Villamaria", g.get_connections("4: Villamaria"))
+print("Conexiones de Villamaria: ", g.get_connections("4: Villamaria"))
 
-print("Conexiones de Palestina", g.get_connections("5: Palestina"))
+print("Conexiones de Palestina: ", g.get_connections("5: Palestina"))
 
-print("Conexiones de Neira", g.get_connections("6: Neira"))
+print("Conexiones de Neira: ", g.get_connections("6: Neira"))
+
+print("Conexiones de La Virginia: ", g.get_connections("7: La Virginia"))
+
+print("Conexiones de Dosquebradas: ", g.get_connections("8: Dosquebradas"))
+
+print("Conexiones de Santa Rosa de Cabal: ", g.get_connections("9: Santa Rosa de Cabal"))
+
+print("Conexiones de Cartago", g.get_connections("10: Cartago"))
+
+print("Conexiones de Calarca: ", g.get_connections("11: Calarca"))
+ 
+print("Conexiones de Ciscasia: ", g.get_connections("12: Ciscasia"))
+ 
+print("Conexiones de La Tebaida: ", g.get_connections("13: La Tebaida"))
+ 
+print("Conexiones de Montenegro: ", g.get_connections("14: Montenegro"))
