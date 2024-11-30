@@ -32,12 +32,58 @@ class Graph:
 
 # Uso
 g = Graph()
-g.add_edge("Bogotá", "Melgar")
-g.add_edge("Bogotá", "Medellin")
-g.add_edge("Melgar", "Girardot")
+g.add_edge("0: Manizales", "1: Pereira")
+g.add_edge("0: Manizales", "2: Armenia")
+g.add_edge("0: Manizales", "3: Chinchina ")
+g.add_edge("0: Manizales", "4: Villamaria")
+g.add_edge("0: Manizales", "5: Palestina")
+g.add_edge("0: Manizales", "6: Neira")
+g.add_edge("0: Manizales", "8: Dosquebradas")
+g.add_edge("0: Manizales", "9: Santa Rosa de Cabal")
+g.add_edge("0: Manizales", "10: Cartago")
+
+
+g.add_edge("1: Pereira", "0: Manizales")
+g.add_edge("1: Pereira", "2: Armenia")
+g.add_edge("1: Pereira", "7: La Virginia")
+g.add_edge("1: Pereira", "8: Dosquebradas")
+g.add_edge("1: Pereira", "9: Santa Rosa de Cabal")
+g.add_edge("1: Pereira", "10: Cartago")
+g.add_edge("1: Pereira", "12: Ciscasia")
+
+g.add_edge("2: Armenia", "0: Manizales")
+g.add_edge("2: Armenia", "1: Pereira")
+g.add_edge("2: Armenia", "8: Dosquebradas")
+g.add_edge("2: Armenia", "9: Santa Rosa de Cabal")
+g.add_edge("2: Armenia", "10: Cartago")
+g.add_edge("2: Armenia", "11: Calarca)")
+g.add_edge("2: Armenia", "12: Ciscasia")
+g.add_edge("2: Armenia", "13: La Tebaida")
+g.add_edge("2: Armenia", "14: Montenegro")
+
+g.add_edge("3: Chinchina", "0: Manizales")
+
+
+g.add_edge("4: Villamaria", "0: Manizales")
+
+
+g.add_edge("5: Palestina", "0: Manizales")
+
+
+g.add_edge("6: Neira", "0: Manizales")
+
 print("Grafo completo:", g.display_graph())
-print("Conexiones de Bogotá:", g.get_connections("Bogotá"))
-g.update_edge("Bogotá", "Melgar", "Girardot")
-print("Después de actualizar una conexión:", g.display_graph())
-g.delete_node("Medellin")
-print("Después de eliminar nodo medellin:", g.display_graph())
+print("Conexiones de Manizales", g.get_connections("0: Manizales"))
+
+
+print("Conexiones de Pereira", g.get_connections("1: Pereira"))
+
+print("Conexiones de Armenia", g.get_connections("2: Armenia"))
+
+print("Conexiones de Chinchina", g.get_connections("3: Chinchina"))
+
+print("Conexiones de Villamaria", g.get_connections("4: Villamaria"))
+
+print("Conexiones de Palestina", g.get_connections("5: Palestina"))
+
+print("Conexiones de Neira", g.get_connections("6: Neira"))
